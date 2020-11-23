@@ -29,4 +29,8 @@
       margin-bottom: 3.875rem;
     }
   }
+
+  &--narrow {
+    max-width: 470px;
+  }
 }
