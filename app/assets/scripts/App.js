@@ -3,6 +3,8 @@ import 'lazysizes';
 import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
+import ClientArea from './modules/ClientArea';
+
 // import Modal from './modules/Modal';
 if (module.hot) {
   module.hot.accept();
@@ -13,6 +15,7 @@ let modal;
 new RevealOnScroll(document.querySelectorAll(`.feature-item`), 75);
 new RevealOnScroll(document.querySelectorAll(`.testimonial`), 60);
 new StickyHeader();
+new ClientArea();
 // new Modal();
 
 document.querySelectorAll(`.open-modal`)
