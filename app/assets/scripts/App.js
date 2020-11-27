@@ -5,6 +5,13 @@ import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
 import ClientArea from './modules/ClientArea';
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import MyComponent from './modules/MyComponent';
+
+ReactDOM.render(<MyComponent/>, document.querySelector(`#my-react-example`));
+
 // import Modal from './modules/Modal';
 if (module.hot) {
   module.hot.accept();
@@ -14,8 +21,8 @@ const mobileMenu = new MobileMenu();
 let modal;
 new RevealOnScroll(document.querySelectorAll(`.feature-item`), 75);
 new RevealOnScroll(document.querySelectorAll(`.testimonial`), 60);
-new StickyHeader();
 new ClientArea();
+new StickyHeader();
 // new Modal();
 
 document.querySelectorAll(`.open-modal`)
